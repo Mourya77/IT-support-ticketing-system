@@ -67,6 +67,19 @@ const loginUser = async (req, res) => {
     }
 };
 
+// @desc    Get all users (For Admin Dashboard)
+// @route   GET /api/auth/users
+// @access  Private
+const getUsers = async (req, res) => {
+    try {
+        // Fetch all users but hide the password field
+        const users = await User.find({}).select('-password');
+        res.json(users);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching users' });
+    }
+};
+
 // Generate JWT
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -77,4 +90,5 @@ const generateToken = (id) => {
 module.exports = {
     registerUser,
     loginUser,
+    getUsers, // <--- Added this to exports
 };
