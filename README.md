@@ -147,3 +147,23 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 5.  Open a Pull Request
 
 ---
+
+## 📸 Screenshots
+
+### Login Page
+![Login Page](assets/screenshots/login-screen.png)
+
+### Dashboard Overview
+![Dashboard Overview](assets/screenshots/dashboard-overview.png)
+
+### Ticket Management
+![Ticket List](assets/screenshots/dashboard-tickets.png)
+
+### Create Ticket
+![Create Ticket Modal](assets/screenshots/create-ticket-modal.png)
+
+### User Management
+![Manage Employees](assets/screenshots/manage-employees.png)
+
+### Add Employee
+![Add Employee Form](assets/screenshots/add-employee-form.png)
